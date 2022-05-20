@@ -1,0 +1,192 @@
+/* ======= Header Section/Seção de Cabeçalho ======== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  /* Search Form/Formulario de pesquisa */
+  /* Shopping-cart/Carrinho de compras */
+  /* Login Form/Formulario de Logins */
+}
+.header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #222;
+}
+.header .logo i {
+  color: #bac34e;
+  padding-right: 0.5rem;
+}
+.header .navbar a {
+  font-size: 1.7rem;
+  color: #666;
+  margin: 0 1rem;
+}
+.header .navbar a:hover {
+  color: #bac34e;
+}
+.header .icons div {
+  font-size: 2.5rem;
+  margin-left: 1.7rem;
+  cursor: pointer;
+  color: #666;
+}
+.header .icons div:hover {
+  color: #bac34e;
+}
+.header .search-form {
+  position: absolute;
+  top: -115%;
+  right: 2rem;
+  width: 50rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  height: 5.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+.header .search-form.active {
+  top: 115%;
+}
+.header .search-form input {
+  height: 100%;
+  width: 100%;
+  padding: 0 1.2rem;
+  font-size: 1.6rem;
+  color: #222;
+  text-transform: none;
+}
+.header .search-form label {
+  font-size: 2.5rem;
+  margin-right: 1.7rem;
+  cursor: pointer;
+  color: #666;
+}
+.header .search-form label:hover {
+  color: #bac34e;
+}
+.header .shopping-cart {
+  position: absolute;
+  top: 115%;
+  right: -105%;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  width: 35rem;
+  padding: 2rem;
+}
+.header .shopping-cart.active {
+  right: 2rem;
+}
+.header .shopping-cart .box {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.header .shopping-cart .box .fa-times {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #666;
+  cursor: pointer;
+}
+.header .shopping-cart .box .fa-times:hover {
+  color: #bac34e;
+}
+.header .shopping-cart .box img {
+  height: 10rem;
+}
+.header .shopping-cart .box .content h3 {
+  font-size: 1.7rem;
+  padding-bottom: 0.5rem;
+  color: #222;
+}
+.header .shopping-cart .box .content span {
+  font-size: 1.5rem;
+  color: #666;
+}
+.header .shopping-cart .box .content span.multiply {
+  margin: 0 0.5rem;
+}
+.header .shopping-cart .total {
+  color: #666;
+  text-align: center;
+  font-size: 2.2rem;
+}
+.header .shopping-cart .total span {
+  color: #222;
+}
+.header .shopping-cart .btn {
+  text-align: center;
+  width: 100%;
+}
+.header .login-form {
+  position: absolute;
+  top: 115%;
+  right: -105%;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  width: 35rem;
+  padding: 2rem;
+}
+.header .login-form.active {
+  right: 2rem;
+  transition: 0.4s linear;
+}
+.header .login-form h3 {
+  color: #222;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+.header .login-form .box {
+  margin: 0.7rem 0;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.2rem;
+  font-size: 1.5rem;
+  color: #222;
+  text-transform: none;
+  width: 100%;
+}
+.header .login-form .remember {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.7rem 0;
+}
+.header .login-form .remember label {
+  font-size: 1.5rem;
+  color: #666;
+  cursor: pointer;
+}
+.header .login-form .btn {
+  margin: 1rem 0;
+  width: 100%;
+  /*largura*/
+  text-align: center;
+}
+.header .login-form p {
+  color: #666;
+  padding-top: 0.7rem;
+  font-size: 1.4rem;
+}
+.header .login-form p a {
+  color: #bac34e;
+}
+.header .login-form p a:hover {
+  text-decoration: underline;
+}
